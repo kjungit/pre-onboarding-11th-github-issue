@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import React, { ReactNode } from "react";
+
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -48,7 +49,8 @@ function Header() {
           </div>
         </section>
         <section css={{ width: "100%", display: "flex" }}>
-          <div
+          <Link
+            to="/list"
             css={{
               fontSize: "18px",
               fontWeight: "bold",
@@ -56,8 +58,8 @@ function Header() {
               borderBottom: "1px solid white",
             }}
           >
-            Issues
-          </div>
+            facebook / react
+          </Link>
         </section>
       </div>
     </header>

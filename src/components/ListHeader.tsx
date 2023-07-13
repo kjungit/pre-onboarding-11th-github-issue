@@ -1,14 +1,5 @@
 /** @jsxImportSource @emotion/react */
-const MENU_ITEM = [
-  {
-    title: "Author",
-  },
-  { title: "Label" },
-  { title: "Projects" },
-  { title: "Milestones" },
-  { title: "Assignee" },
-  { title: "Sort" },
-];
+
 export function ListHeader() {
   return (
     <div
@@ -25,13 +16,7 @@ export function ListHeader() {
         justifyContent: "center",
       }}
     >
-      <ul css={{ display: "flex", alignItems: "center", gap: "10px" }}>
-        {MENU_ITEM.map((item) => (
-          <li key={item.title} css={{ padding: "8px", color: "#7d8590" }}>
-            {item.title}
-          </li>
-        ))}
-      </ul>
+      Issues
     </div>
   );
 }
