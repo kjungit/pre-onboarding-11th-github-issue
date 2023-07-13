@@ -126,6 +126,11 @@ const style = css`
     border-collapse: collapse;
     border-spacing: 0;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  box-sizing: border-box;
 `;
 
 export const GlobalStyle = () => {
